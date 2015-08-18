@@ -1,7 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
+##The function "makeCacheMatrix" solve the inverse of a square numeric 
+##or complex matrix and store it in an environment that is different from the 
+##current environment. The function "cacheSolve" tests if the (posterior) matrix is solved
+##and if is not, apply the function "solve" to get the inverse   
 
-## Write a short comment describing this function
+##This function solve the matrix and store it
 
 makeCacheMatrix <- function(x = matrix()) {
 m<-NULL
@@ -17,7 +19,9 @@ m<-NULL
 
 
 
-## Write a short comment describing this function
+##This function work with the "makeCacheMatrix" function and
+##tests if the inverse matrix its solved if its not, the matrix
+##its solved
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
